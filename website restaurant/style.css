@@ -1,0 +1,289 @@
+/* Section d'accueil */
+.home-section {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(110deg, white 68%, #ffc800 32%);
+}
+
+/* Logo personnalisé */
+#logo {
+    font-size: 30px;
+    margin-left: 30px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* Texte dans la section principale */
+.content h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: black;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+.content h1 span {
+    color: #ffc800;
+}
+
+.content p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2rem;
+    color: black;
+    margin: 20px 0;
+}
+.home .img img{
+    width: 92%;
+    animation: c 5s linear infinite;
+}
+@keyframes c{
+    0%, 100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+}
+
+/* Bouton personnalisé */
+#btn button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+#btn span {
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+/* Image de la section */
+.img img {
+    max-width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+/* Effet hover sur les liens de navigation */
+.nav-link:hover {
+    color: #ffc800; /* Couleur jaune au survol */
+    text-shadow: 1px 1px 1px black;
+}
+@media screen and (max-width:1200px){
+    .home-section{
+        height: 90vh;
+    }
+}
+@media screen and (max-width:799px){
+    .home-section{
+        height: 140vh;
+    }
+}
+@media screen and (max-width:550px){
+    .home-section{
+        height: 110vh;
+    }
+}
+@media screen and (max-width:420px){
+    .content h1 span{
+        font-size: 80px;
+    }
+}
+@media screen and (max-width:320px){
+    .content h1{
+        font-size: 50px;
+    }
+    .content h1 span{
+        font-size: 60px;
+    }
+}
+#top-icons{
+    margin-top: 50px;
+}
+#top-icons h1{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    border-bottom: 2px solid #ffc800;
+    text-shadow: 1px 1px 1px black;
+}
+/* cards */
+#cards{
+    margin-top: 100px;
+    font-family: 'Roboto Slab', serif;
+}
+#cards .card h3{
+    color: #ffc800;
+    font-weight: bold;
+}
+#cards .card p{
+    color: #ffc800;
+    font-weight: bold;
+}
+#rn{
+    width: 150px;
+    height: 32px;
+    border: none;
+    background: transparent;
+    color: #ffc800;
+    border: 2px solid #ffc800;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#rn:hover{
+    background-color: #ffc800;
+    color: white;
+}
+/* cards */
+
+/* burger */
+#burger{
+    margin-top: 100px;
+    font-family: 'Roboto Slab', serif;
+}
+#burger h1{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    border-bottom: 2px solid #ffc800;
+    text-shadow: 1px 1px 1px black;
+}
+#burger .card{
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#burger .card:hover{
+    background-color: #ffc800;
+}
+#burger .card h3{
+    font-weight: bold;
+    text-shadow: 0px 0px 1px black;
+}
+#burger .card h5 span{
+    color: black;
+    float: right;
+}
+/* burger */
+/* about */
+#about{
+    margin-top: 100px;
+}
+#about h1{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    border-bottom: 2px solid #ffc800;
+    text-shadow: 1px 1px 1px black;
+}
+#about h2{
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    border-bottom: 2px solid #ffc800;
+    text-shadow: 1px 1px 1px black;
+}
+#about p{
+    font-family: 'Roboto Slab', serif;
+}
+#readmorebtn button{
+    width: 200px;
+    height: 32px;
+    background: transparent;
+    border: 2px solid #ffc800;
+    color: #ffc800;
+    font-weight: bold;
+    letter-spacing: 3px;
+    transition: 0.5s ease;
+}
+#about .card{
+    background-color: #ffc800;
+}
+#readmorebtn button:hover{
+    background-color: #ffc800;
+    color: white;
+}
+/* about */
+/* contact */
+#contact{
+    margin-top: 10px;
+    border: 2px solid #ffc800;
+}
+#h2{
+    margin-top: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    border-bottom: 2px solid #ffc800;
+    text-shadow: 1px 1px 1px black;
+}
+#contact h3{
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    border-bottom: 2px solid #ffc800;
+    text-shadow: 1px 1px 1px black;
+}
+#contact p{
+    font-family: 'Roboto Slab', serif;
+}
+#contact input{
+    width: 500px;
+    height: 42px;
+    margin-top: 20px;
+    background-color: #ffc800;
+    border: none;
+    border-radius: 5px;
+}
+#contact ::placeholder{
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    padding-left: 10px;
+    font-weight: bold;
+}
+#btnmessage{
+    margin-top: 20px;
+    width: 200px;
+    height: 32px;
+    background: transparent;
+    border: 2px solid #ffc800;
+    letter-spacing: 3px;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+#btnmessage:hover{
+    background-color: #ffc800;
+    color: white;
+}
+#contact i{
+    color: #ffc800;
+    font-size: 20px;
+    margin-top: 30px;
+}
+#contact i span{
+    font-family: 'Dancing Script', cursive;
+}
+@media screen and (max-width:1200px){
+    #contact input{
+        width: 350px;
+    }
+}
+@media screen and (max-width:385px){
+    #contact input{
+        width: 250px;
+    }
+}
+/* contact */
+
+
+#footer{
+    padding: 0 0 30px 0;
+    font-family: 'Roboto Slab', serif;
+    color: black;
+    font-size: 14px;
+    background: #ffc800;
+    font-weight: bold;
+    text-shadow: 0px 0px 1px black;
+}
