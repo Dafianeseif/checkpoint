@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap links -->
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <!-- fonts links -->
+</head>
+<body>
+
+   
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" id="logo"><span id="span1">E</span>Tech-<span>Shop</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><img src="./images/menu.png" alt="" width="30px"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Product</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Category
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(67 0 86);">
+                  <li><a class="dropdown-item" href="#">Smart Phone</a></li>
+                  <li><a class="dropdown-item" href="#">Mobile Phone</a></li>
+                  <li><a class="dropdown-item" href="#">Cameras</a></li>
+                  <li><a class="dropdown-item" href="#">Fridge</a></li>
+                  <li><a class="dropdown-item" href="#">AC</a></li>
+                  <li><a class="dropdown-item" href="#">Smart Watch</a></li>
+                  <li><a class="dropdown-item" href="#">Headphone</a></li>
+                  <li><a class="dropdown-item" href="#">Laptop</a></li>
+                  <li><a class="dropdown-item" href="#">PC </a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" id="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- navbar -->
+    
+
+
+
+
+
+
+    
+    <!-- home content -->
+    <section class="home">
+    <div class="content">
+      <h1> <span>Produits électroniques</span>
+        <br>
+        Jusqu'à  <span id="span2">50%</span> de réduction
+      </h1>
+     
+      <div class="btn"><button>acheter </button></div>
+
+    </div>
+    <div class="img">
+      <img src="./images/background.png" alt="">
+    </div>
+  </section>
+    <!-- home content -->
+
+
+
+
+
+
+
+
+    <!-- product cards -->
+    <div class="container" id="product-cards">
+      <h1 class="text-center">PRODUCTS</h1>
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/p6.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Iphone 13 pro</h3>
+              <p class="text-center">Achetez maintenant.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>2300 TND <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/a1.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Airpods</h3>
+              <p class="text-center">Achetez maintenant.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>150 TND <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/laptop2.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Laptop</h3>
+              <p class="text-center">Achetez maintenant.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>3200 TND <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/t1.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Ipad</h3>
+              <p class="text-center">Achetez maintenant.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>300 TND <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/w1.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Smart Watch</h3>
+              <p class="text-center">Achetez maintenant.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>59.99 TND <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/pcm1.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">PC Moniter</h3>
+              <p class="text-center">Achetez maintenant.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>4600 TND <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/phone1.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">iPhone x</h3>
+              <p class="text-center">Achetez maintenant.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>900 TND <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/h1.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Headphone</h3>
+              <p class="text-center">Achetez maintenant.</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>99TND<span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- product cards -->
+
+
+
+
+
+
+
+
+
+    <!-- other cards -->
+    <div class="container" id="other-cards">
+      <div class="row">
+        <div class="col-md-6 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/c1.png" alt="">
+            <div class="card-img-overlay">
+              <h3>Best Laptop</h3>
+              <h5>Latest Collection</h5>
+              <p>Up To 50% Off</p>
+              <button id="shopnow">Demander</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/c2.png" alt="">
+            <div class="card-img-overlay">
+              <h3>Best Headphone</h3>
+              <h5>Latest Collection</h5>
+              <p>Up To 50% Off</p>
+              <button id="shopnow">Demander</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- other cards -->
+   
+
+
+
+
+
+
+    <!-- banner -->
+    <section class="banner">
+      <div class="content">
+        <h1> <span>Electronic Gadget</span>
+          <br>
+          Up To <span id="span2">50%</span> Off
+        </h1>
+
+        <div class="btn"><button>Shop Now</button></div>
+  
+      </div>
+      <div class="img">
+        <img src="./images/image1.png" alt="">
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- product cards -->
+    <div class="container" id="product-cards">
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/pr1.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Vaisselle Machine</h3>
+              <p class="text-center"></p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>2100 TND <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/pr2.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">AC</h3>
+              <p class="text-center"></p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>900 TND <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/pr3.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">MICRO ONDE</h3>
+              <p class="text-center"></p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>560 TND <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/pr4.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Fridge</h3>
+              <p class="text-center"></p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>700 TND <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- other cards -->
+    <div class="container" id="other">
+      <div class="row">
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/c3.png" alt="">
+            <div class="card-img-overlay">
+              <h3>Home Gadget</h3>
+              <p>Latest collection Up To 50% Off</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/c4.png" alt="">
+            <div class="card-img-overlay">
+              <h3>Gaming Gadget</h3>
+              <p>Latest collection Up To 50% Off</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/c5.png" alt="">
+            <div class="card-img-overlay">
+              <h3>Electronic Gadget</h3>
+              <p>Latest collection Up To 50% Off</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- other cards -->
+
+
+
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/pr5.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Fan</h3>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>56.40 TND <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/pr6.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Fridge</h3>
+                    <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>1500 TND <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/pr7.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Gaming PC</h3>
+              <p class="text-center"></p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>545.50 TND <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/pr8.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Moniter</h3>
+            
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>250 TND <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/pr9.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Smart Watch</h3>
+              <p class="text-center"></p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>30.20 TND<span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/pr10.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Power Bank</h3>
+              <p class="text-center"></p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>100.99TND <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/pr11.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Gaming Mouse</h3>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>30 TND <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/pr12.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Joysticks</h3>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>150 TND <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- product cards -->
+
+
+
+
+
+
+
+    <!-- newslater -->
+    <div class="container" id="newslater">
+      <h3 class="text-center">Subscribe To The Electronic Shop For Latest upload.</h3>
+      <div class="input text-center">
+        <input type="text" placeholder="Enter Your Email..">
+        <button id="subscribe">SUBSCRIBE</button>
+      </div>
+    </div>
+    <!-- newslater -->
+    <!-- footer -->
+    <footer id="footer">
+      <div class="footer-top">
+        
+      </div>
+      <hr>
+      <div class="container py-4">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Electronic Shop</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a href="#">SEIF EDDine DAFIANE</a>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+    <a href="#" class="arrow"><i><img src="./images/arrow.png" alt=""></i></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
