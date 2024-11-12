@@ -1,77 +1,99 @@
-// Classe Produit
-var Produit = class {
-    constructor(Id, nom, prix) {
-        this.Id = Id;
-        this.nom = nom;
-        this.prix = prix;
-    }
-};
+document.addEventListener("DOMContentLoaded", function () {
+    const totalPriceElement = document.querySelector(".total");
 
-// Classe Panier
-var Panier = class {
-    constructor(Produit, quantite) {
-        this.Produit = Produit;
-        this.quantite = quantite;
-    }
-
-    // Méthode pour calculer le prix total de l'élément
-    totalPrix() {
-        return this.Produit.prix * this.quantite;
-    }
-};
-
-// Classe ShoppingCart
-class ShoppingCart {
-    constructor() {
-        this.items = [];
-    }
-
-    // Ajouter un élément au panier
-    addItem(Produit, quantite = 1) {
-        const existingItem = this.items.find(item => item.Produit.Id === Produit.Id);
-        if (existingItem) {
-            existingItem.quantite += quantite;
-        } else {
-            this.items.push(new Panier(Produit, quantite));
+    // Classe Produit
+    class Produit {
+        constructor(Id, nom, prix) {
+            this.Id = Id;
+            this.nom = nom;
+            this.prix = prix;
         }
     }
 
-    // Supprimer un élément du panier
-    removeItem(productId) {
-        this.items = this.items.filter(item => item.Produit.Id !== productId);
-    }
+    // Classe Panier pour un élément du panier
+    class Panier {
+        constructor(produit, quantite) {
+            this.produit = produit;
+            this.quantite = quantite;
+        }
 
-    // Obtenir le prix total de tous les éléments du panier
-    getTotalPrice() {
-        return this.items.reduce((total, item) => total + item.totalPrix(), 0);
-    }
-
-    // Afficher les éléments du panier
-    showCart() {
-        if (this.items.length === 0) {
-            console.log("Le panier est vide.");
-        } else {
-            console.log("Contenu du panier:");
-            this.items.forEach(item => {
-                console.log(`Produit: ${item.Produit.nom}, Quantité: ${item.quantite}, Prix total: ${item.totalPrix()} €`);
-            });
-            console.log(`Prix total du panier: ${this.getTotalPrice()} €`);
+        totalPrix() {
+            return this.produit.prix * this.quantite;
         }
     }
-}
 
-// Tests
-// Créer des produits
-const product1 = new Produit(1, "Produit A", 10);
-const product2 = new Produit(2, "Produit B", 20);
+    // Classe ShoppingCart
+    class ShoppingCart {
+        constructor() {
+            this.items = [];
+        }
 
-// Créer un panier d'achat
-const cart = new ShoppingCart();
+        addItem(produit, quantite = 1) {
+            const existingItem = this.items.find(item => item.produit.Id === produit.Id);
+            if (existingItem) {
+                existingItem.quantite += quantite;
+                if (existingItem.quantite <= 0) {
+                    this.removeItem(produit.Id);
+                }
+            } else if (quantite > 0) {
+                this.items.push(new Panier(produit, quantite));
+            }
+            this.updateTotalPrice();
+        }
 
-// Ajouter des éléments au panier
-cart.addItem(product1, 2);
-cart.addItem(product2, 1);
+        removeItem(productId) {
+            this.items = this.items.filter(item => item.produit.Id !== productId);
+            this.updateTotalPrice();
+        }
 
-// Afficher le panier
-cart.showCart();
+        getTotalPrice() {
+            return this.items.reduce((total, item) => total + item.totalPrix(), 0);
+        }
 
+        updateTotalPrice() {
+            totalPriceElement.innerText = `${this.getTotalPrice()} $`;
+        }
+    }
+
+    // Création de l'instance du panier
+    const cart = new ShoppingCart();
+
+    // Gestion des éléments produits dans le DOM
+    const products = document.querySelectorAll(".card--body");
+    products.forEach((productElement, index) => {
+        const name = productElement.querySelector(".card-title").innerText;
+        const price = parseFloat(productElement.querySelector(".unit-price").innerText.replace(" $", ""));
+        const produit = new Produit(index + 1, name, price);  // Utilise l'index comme Id pour simplifier
+        
+        const btnPlus = productElement.querySelector(".fa-plus-circle");
+        const btnMinus = productElement.querySelector(".fa-minus-circle");
+        const quantityElement = productElement.querySelector(".quantity");
+        const btnDelete = productElement.querySelector(".fa-trash-alt");
+        const btnHeart = productElement.querySelector(".fa-heart");
+
+        let quantity = 0;
+
+        btnPlus.addEventListener("click", () => {
+            quantity += 1;
+            quantityElement.innerText = quantity;
+            cart.addItem(produit, 1);
+        });
+
+        btnMinus.addEventListener("click", () => {
+            if (quantity > 0) {
+                quantity -= 1;
+                quantityElement.innerText = quantity;
+                cart.addItem(produit, -1);
+            }
+        });
+
+        btnDelete.addEventListener("click", () => {
+            productElement.remove();
+            cart.removeItem(produit.Id);
+        });
+
+        btnHeart.addEventListener("click", () => {
+            btnHeart.classList.toggle("liked");
+        });
+    });
+});
