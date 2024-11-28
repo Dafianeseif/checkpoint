@@ -9,7 +9,7 @@ function checkBusinessHours(req, res, next) {
     const hour = currentDate.getHours(); // de 0 à 23
 
     // Vérifier si c'est un jour de semaine (1 à 5) et si l'heure est entre 9 et 17
-    if (day >= 1 && day <= 5 && hour >= 9 && hour < 23) {
+    if (day >= 1 && day <= 5 && hour >= 9 && hour < 17) {
         next(); // Continue si dans les heures de travail
     } else {
         res.status(403).send('L\'application est disponible uniquement pendant les heures de travail (lundi à vendredi, de 9h à 17h).');
