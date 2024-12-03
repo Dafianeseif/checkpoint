@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link href="./style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Ajout de Google Fonts -->
+
+</head>
+
+<body class="bg-gray-100 ">
+  <header>
+    <nav class="bg-gray-800">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button type="button"
+              class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-controls="mobile-menu" aria-expanded="false">
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open main menu</span>
+              <!--
+                  Icon when menu is closed.
+      
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+              <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                aria-hidden="true" data-slot="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+              <!--
+                  Icon when menu is open.
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+              <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                aria-hidden="true" data-slot="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+            <div class="flex flex-shrink-0 items-center">
+              <img class="h-8 w-auto" src="img/curriculum-vitae.png" alt="Your Company">
+            </div>
+            <div class="hidden sm:ml-6 sm:block">
+              <div class="flex space-x-4">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
+                  aria-current="page">HOME</a>
+                <a href="#"
+                  class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">SKILLS</a>
+                <a href="#"
+                  class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">WORKS</a>
+                <a href="#"
+                  class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">CONTACT</a>
+              </div>
+            </div>
+          </div>
+          <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            <button type="button"
+              class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+              <span class="absolute -inset-1.5"></span>
+              <span class="sr-only">View notifications</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                aria-hidden="true" data-slot="icon">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+              </svg>
+            </button>
+
+            <!-- Profile dropdown -->
+            <div class="relative ml-3">
+              <div>
+                <button type="button"
+                  class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                  id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                  <span class="absolute -inset-1.5"></span>
+                  <span class="sr-only">Open user menu</span>
+                  <img class="h-8 w-8 rounded-full" src="./img/seif.jfif" alt="">
+                </button>
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="sm:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+          <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+            aria-current="page">HOME</a>
+          <a href="#"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">SKILLS</a>
+          <a href="#"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">WORKS</a>
+          <a href="#"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">CONTACT</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+    <section class="py-[100px] px-[200px] w-full min-h-screen flex items-center bg-cover bg-center bg-fixed"
+      style="background-image: url(./img/pexels-luis-gomes-166706-546819.jpg);">
+      <div class="">
+        <div class="ml-3 text-center">
+          <h3 class="text-[#fcfcfc] text-[1.5em] font-medium">Hi, I'm <span class="text-[#d97706]">SEIF EDDINE</span>.
+          </h3>
+          <h1 class="text-5xl font-bold text-white ml-3">WEB <span class="text-[#d97706]">DEVELOPER</span></h1>
+          <h3 class="text-lg text-white font-bold mt-4">I create <br> websites to help businesses do better online.</h3>
+          <button class="bg-black text-white font-bold py-2 px-2 rounded-3xl hover:bg-[#35383a] transition duration-300 flex " >
+            About Me
+          </button>
+        </div>
+
+
+
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class=" py-24 px-6 sm:py-32 lg:px-8">
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-[#d97706] border-b-2 border-[#d97706] inline-block mb-6 font-serif">
+          About Me
+        </h2>
+        <div class="border-b-2 border-gray-300 w-24 mx-auto mb-6"></div> <!-- Ligne sous le titre -->
+        <p class="text-lg text-gray-700 max-w-2xl mx-auto font-serif">
+          I am Seif Eddine, a web developer with a passion for creating interactive and dynamic websites. My goal is to
+          build user-friendly and efficient websites that meet the needs of my clients and their customers.
+        </p>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+  </main>
+</body>
+
+</html>

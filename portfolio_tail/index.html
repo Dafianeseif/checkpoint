@@ -9,21 +9,36 @@
 </head>
 <body>
     <header>
-        <div class="bg-transparent  text-white flex justify-between py-[10px] px-[20px] w-full fixed items-center">
-            <a href="" class="uppercase font-bold text-[1.8em] text-[#fcfcfc] no-underline"> SEif<span
+        <div class="bg-transparent text-white fixed w-full flex items-center justify-between py-[10px] px-[20px]">
+            <a href="#" class="uppercase font-bold text-[1.8em] text-[#fcfcfc] no-underline"> SEif<span
                     class="text-[#0fa2dbff]"> Eddine</span> </a>
-            <nav>
-            <a href="#home"
-                    class="text-[#fcfcfc] no-underline text-[1.1em] font-medium pl-[30px]  hover:text-[#0fa2dbff]">Home</a>
-            <a href="#aboutme"
-                    class="text-[#fcfcfc] no-underline text-[1.1em] font-medium pl-[30px]  hover:text-[#0fa2dbff]">About
-                    Me</a>
-            <a href="#works"
-                    class="text-[#fcfcfc] no-underline text-[1.1em] font-medium pl-[30px]  hover:text-[#0fa2dbff]">Works</a>
-            <a href="#contact"
-                    class="text-[#fcfcfc] no-underline text-[1.1em] font-medium pl-[30px]  hover:text-[#0fa2dbff]">Contact</a>
+            
+            <!-- Checkbox pour activer/désactiver le menu -->
+            <input type="checkbox" id="menu-toggle" class="hidden" />
+        
+            <!-- Label pour le bouton hamburger -->
+            <label for="menu-toggle" class="md:hidden text-[#fcfcfc] text-[1.8em] cursor-pointer">☰</label>
+        
+            <!-- Navigation principale -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="#home" class="text-[#fcfcfc] no-underline text-[1.1em] font-medium hover:text-[#0fa2dbff]">Home</a>
+                <a href="#aboutme" class="text-[#fcfcfc] no-underline text-[1.1em] font-medium hover:text-[#0fa2dbff]">About Me</a>
+                <a href="#works" class="text-[#fcfcfc] no-underline text-[1.1em] font-medium hover:text-[#0fa2dbff]">Works</a>
+                <a href="#contact" class="text-[#fcfcfc] no-underline text-[1.1em] font-medium hover:text-[#0fa2dbff]">Contact</a>
             </nav>
+        
+            <!-- Menu mobile -->
+            <div class="md:hidden flex flex-col space-y-4 absolute top-[60px] right-[20px] bg-[#222] text-white rounded-lg shadow-lg p-4 transition-all duration-300 transform scale-0"
+                 style="transform-origin: top right;" id="mobile-menu">
+                <a href="#home" class="hover:bg-[#0fa2dbff] p-2 rounded">Home</a>
+                <a href="#aboutme" class="hover:bg-[#0fa2dbff] p-2 rounded">About Me</a>
+                <a href="#works" class="hover:bg-[#0fa2dbff] p-2 rounded">Works</a>
+                <a href="#contact" class="hover:bg-[#0fa2dbff] p-2 rounded">Contact</a>
+            </div>
+        
+           
         </div>
+        
     </header>
     
     
@@ -206,7 +221,7 @@
 
         <footer class="bg-[#081c29ff] text-white text-center py-4">
             <div class="container mx-auto">
-                <p class="mb-2">&copy; 2024 Seif Eddine Dafiane. Qrispy.</p>
+                <p class="mb-2">&copy; 2024 Seif Eddine Dafiane..</p>
                 <div class="flex justify-center space-x-3">
                     <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>

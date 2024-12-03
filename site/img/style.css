@@ -1,0 +1,349 @@
+
+/* navbar */
+.navbar-brand img{
+    width: 268px;
+    height: 33px;
+    margin: 20px 10px;
+}
+
+.navbar{
+    background: hsla(0, 0%, 100%, .98);
+}
+
+.nav-link {
+    padding: 1.5rem 3.5rem; 
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00b39b !important;
+}
+
+#aboutus-link {
+    color: #00b39b;
+}
+
+
+/* section1 */
+.service-section {
+    margin-top: 10%;
+}
+
+.slogan-text {
+    margin-top: 15px;
+    color: #00b39b;
+    font-size: 2.5em; 
+}
+
+
+/* section2 */
+.custom-card-bg1 {
+    background-color: #00ccb1;
+    color: white;
+}
+.custom-card-bg2 {
+    background-color: #3d83df;
+    color: white;
+}
+
+.custom-card-bg3 {
+    background-color: #1b2734;
+    color: white;
+}
+
+.card-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-items img{
+    max-width: 100%;
+    height: auto;
+}
+.card-items h1{
+    font-size: 2.625em;
+    font-weight: 400;
+    margin: .3em 0;
+}
+
+
+.card-items h2{
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.custom-select {
+    background: transparent;
+    border: none;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.custom-select option {
+    color: black;
+    font-size: 1.2rem;
+}
+
+
+
+.brand-item { 
+    text-align: center;
+    margin-bottom: 20px; 
+    font-size: 1.5rem;
+    margin-top: 0;
+    padding: 5px 0 5px 5px;
+    list-style: none; 
+    margin-right: 20px;
+}
+
+
+
+
+.brands__logos a svg {
+    height: 20px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.brands__logos a path {
+    fill: hsla(0, 0%, 67%, .7);
+}
+
+.brands__logos .jameda img {
+    height: 20px;
+    filter: grayscale(100%);
+}
+
+.brands__logos .tuotempo img {
+    height: 25px;
+    filter: grayscale(100%);
+}
+
+.brands__logos .clinicloud img,
+.brands__logos .gipo img,
+.brands__logos .mydr img,
+.brands__logos .feegow img {
+    height: 25px;
+    filter: grayscale(100%);
+}
+
+
+
+.brands__logos .clinicloud img:hover,
+.brands__logos .gipo img:hover,
+.brands__logos .mydr img:hover,
+.brands__logos .feegow img:hover,
+.brands__logos .tuotempo img:hover,
+.brands__logos .jameda img:hover {
+    filter: none;
+}
+
+.brands__logos a svg path:hover{
+    fill: #00ccb1;
+}
+
+.brands-title{
+    font-size: 2.125rem;
+    font-weight: 300;
+    color: #00b39b;
+    letter-spacing: -.3px;
+    width: 200%;
+}
+
+
+.statis-section {
+    background-color: #e5faf8;
+    padding: 50px 0; 
+}
+
+#statis-slogan {
+    font-size: 2.2em;
+}
+
+.statis-desc {
+    font-size: 1em;
+    font-weight: 400;
+    padding: 10px 0; 
+}
+
+.dplogo-statis {
+    margin-top: 85px;
+    height: 382px; 
+    overflow: hidden; 
+    position: relative; 
+}
+
+.dplogo-statis img {
+    position: absolute;
+}
+
+
+.box {
+    background-color: #fff;
+    width: 200px; 
+    height: 280px; 
+    border-radius: 15px;
+    margin-top: 31px;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.box img {
+    margin-top: 10%; 
+    width: 50px; 
+}
+
+
+.land-desc {
+    font-size: 13px;
+}
+
+.rd-title {
+    font-size: 20px;
+}
+
+
+.statis-section {
+    background-color: #e5faf8;
+    padding: 50px 0;
+}
+
+#statis-slogan {
+    font-size: 2.2em;
+}
+
+.statis-desc {
+    font-size: 1em;
+    font-weight: 400;
+    padding: 10px 0;
+}
+
+.dplogo-statis {
+    margin-top: 85px;
+    height: 382px; 
+    overflow: hidden; 
+    position: relative; 
+}
+
+.dplogo-statis img {
+    position: absolute;
+}
+
+
+.box {
+    background-color: #fff;
+    width: 200px;
+    height: 280px; 
+    border-radius: 15px;
+    margin-top: 31px;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.box img {
+    margin-top: 10%;
+    width: 50px;
+}
+
+
+.land-desc {
+    font-size: 13px;
+}
+
+.rd-title {
+    font-size: 20px;
+}
+
+
+
+.text-container {
+    margin: 8% auto; 
+}
+
+.text-div {
+    font-size: 1.2em;
+    line-height: 1.7;
+}
+
+
+
+.image-section {
+    margin: 0% 5%; 
+}
+
+.wrapper {
+    border: 0px solid #bbbbbb;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease; 
+}
+
+.wrapper:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.wrapper img {
+    width: 100%;
+    height: auto; 
+}
+
+.city-desc {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    margin: 5%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.seemore-btn {
+    border: 0;
+    border-radius: 4px;
+    padding: 10px 10px;
+    background: #3d83df;
+    line-height: 1em;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: .04em;
+    font-size: .75rem;
+    text-align: center;
+}
+
+.image-section a {
+    text-decoration: none;
+    color: #747474;
+}
+
+
+
+footer {
+    height: 75px;
+    width: 100%;
+    border-top: 1px solid grey;
+    font-size: .75em;
+    color: #ababab;
+    text-align: center;
+    line-height: 2.2;
+}
+
+footer a {
+    color: #3d83df;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+

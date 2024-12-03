@@ -1,0 +1,384 @@
+.navbar {
+    zoom: 1;
+    max-width: 1015px;
+    padding: 0 20px;
+    margin: 0 auto;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+h1 {
+    font-family: Work Sans, Arial, sans-serif !important;
+    font-weight: 300;
+    letter-spacing: -.3px;
+    font-size: 2.125rem;
+    color: #00b39b !important;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    color: #747474 !important;
+    font-weight: 550;
+    font-family: Work Sans, Arial, sans-serif !important;
+}
+
+.card-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.card-items img {
+    max-width: 100%;
+    height: auto;
+}
+
+.custom-select {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+
+.custom-select option {
+    color: black;
+
+}
+
+.home-section {
+    zoom: 1;
+    max-width: 1015px;
+    padding: 0 20px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.navbar-nav a:hover {
+    color: #00b39b;
+
+}
+
+.navbar-nav {
+    list-style: none;
+    font-size: .9375rem;
+    font-weight: 600;
+    line-height: 2em;
+    padding: 1.33em 0;
+}
+
+.navbar-nav a {
+    color: #ababab;
+    display: block;
+    text-decoration: none;
+    padding: 0 .6em;
+
+
+}
+
+.container {
+    margin: 3.75rem auto 2.5rem;
+}
+
+.row {
+
+    margin: 0 -10px;
+
+}
+
+
+.card h5 {
+    font-size: 1.625em;
+    font-weight: 400;
+    color: #fff;
+    margin: .3em 0;
+}
+
+.card h6 {
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0;
+    color: #fff;
+}
+
+.card.mrkt {
+    background: #00ccb1;
+}
+
+.card.saas {
+
+    background: #3d83df;
+
+}
+
+.card.daas {
+    background: #1b2734;
+}
+
+.brands__logos a svg {
+    height: 20px;
+    max-width: 100%;
+
+}
+.brand-items { 
+    text-align: center;
+    margin-bottom: 20px; 
+    font-size: 1.5rem;
+    margin-top: 0;
+    padding: 5px 0 5px 5px;
+    list-style: none; 
+    margin-right: 10px;
+}
+
+
+.brands__logos a svg {
+    height: 20px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.brands__logos a path {
+    fill: hsla(0, 0%, 67%, .7);
+}
+
+.brands__logos .jameda img {
+    height: 20px;
+    filter: grayscale(100%);
+}
+.brands__logos .tuotempo img {
+    height: 20px;
+    filter: grayscale(100%);
+}
+
+.brands__logos .clinicloud img,
+.brands__logos .gipo img,
+.brands__logos .mydr img,
+.brands__logos .feegow img {
+    height: 25px;
+    filter: grayscale(100%);
+}
+
+
+
+.brands__logos .clinicloud img:hover,
+.brands__logos .gipo img:hover,
+.brands__logos .mydr img:hover,
+.brands__logos .feegow img:hover,
+.brands__logos .tuotempo img:hover,
+.brands__logos .jameda img:hover {
+    filter: none;
+}
+.brands__logos a svg path:hover{
+    fill: #00ccb1;
+}
+.brands-title{
+    font-size: 2.125rem;
+    font-weight: 300;
+    color: #00b39b;
+    letter-spacing: -.3px;
+    width: 200%;
+}
+
+
+.statis-section {
+    background-color: #e5faf8;
+    padding: 50px 0; 
+}
+
+#statis-slogan {
+    font-size: 2.2em;
+}
+
+.statis-desc {
+    font-size: 1em;
+    font-weight: 400;
+    padding: 10px 0; 
+}
+
+.dplogo-statis {
+    margin-top: 85px;
+    height: 382px; 
+    overflow: hidden; 
+    position: relative; 
+}
+
+.dplogo-statis img {
+    position: absolute;
+}
+
+
+.box {
+    background-color: #fff;
+    width: 200px; 
+    height: 280px; 
+    border-radius: 15px;
+    margin-top: 31px;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.box img {
+    margin-top: 10%; 
+    width: 50px; 
+}
+
+
+.land-desc {
+    font-size: 13px;
+}
+
+.rd-title {
+    font-size: 20px;
+}
+
+
+.statis-section {
+    background-color: #e5faf8;
+    padding: 50px 0;
+}
+
+#statis-slogan {
+    font-size: 2.2em;
+}
+
+.statis-desc {
+    font-size: 1em;
+    font-weight: 400;
+    padding: 10px 0;
+}
+
+.dplogo-statis {
+    margin-top: 85px;
+    height: 382px; 
+    overflow: hidden; 
+    position: relative; 
+}
+
+.dplogo-statis img {
+    position: absolute;
+}
+
+
+.box {
+    background-color: #fff;
+    width: 200px;
+    height: 280px; 
+    border-radius: 10px;
+    margin-top: 31px;
+    font-weight: 300;
+    text-align: center;
+
+}
+
+.box img {
+    margin-top: 10%;
+    width: 50px;
+}
+
+
+.land-desc {
+    font-size: 13px;
+}
+
+.rd-title {
+    font-size: 20px;
+}
+
+
+
+.text-container {
+    margin: 8% auto; 
+}
+
+.text-div {
+    font-size: 1.2em;
+    line-height: 1.7;
+}
+
+
+
+.image-section {
+    margin: 0% 5%; 
+}
+
+.wrapper {
+    border: 0px solid #bbbbbb;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease; 
+}
+
+.wrapper:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.wrapper img {
+    width: 100%;
+    height: auto; 
+}
+
+.city-desc {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    margin: 5%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.seemore-btn {
+    border: 0;
+    border-radius: 4px;
+    padding: 10px 10px;
+    background: #3d83df;
+    line-height: 1em;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: .04em;
+    font-size: .75rem;
+    text-align: center;
+}
+
+.image-section a {
+    text-decoration: none;
+    color: #747474;
+}
+
+
+
+footer {
+    height: 75px;
+    width: 100%;
+    border-top: 1px solid grey;
+    font-size: .75em;
+    color: #ababab;
+    text-align: center;
+    line-height: 2.2;
+}
+
+footer a {
+    color: #3d83df;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

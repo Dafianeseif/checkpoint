@@ -1,0 +1,16 @@
+{
+  "name": "mon-projet-tailwind",
+  "version": "1.0.0",
+  "description": "Un projet utilisant Tailwind CSS",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./src/tailwind.css -o ./style.css --watch"
+  },
+  "author": "Ton Nom",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.0.0",
+    "autoprefixer": "^10.0.0",
+    "postcss": "^8.0.0"
+  }
+}

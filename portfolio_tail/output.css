@@ -908,3 +908,6 @@ video {
 .hover\:text-\[\#0fa2dbff\]:hover {
   color: #0fa2dbff;
 }
+#menu-toggle:checked + label + #mobile-menu {
+  transform: scale(1);
+}
